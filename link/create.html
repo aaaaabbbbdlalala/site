@@ -3,6 +3,19 @@
         <title>Create link</title>
     </head>
     <body>
+        
+        <form>
+            <input id="text" type="text" placeholder="www.example.com">
+            <input type="submit" value="Create" onclick="create();">
+            <a id="out"></a>
+        </form>
+        <script>
+            function create() {
+                var str = document.getElementById('text').value;
+                str = 'https%3A%2F%2F' + str;
 
+                document.getElementById('out').innerText = str;
+            }
+        </script>
     </body>
 </html>
