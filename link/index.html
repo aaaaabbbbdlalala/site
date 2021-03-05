@@ -8,7 +8,7 @@
 
         const urlParams = new URLSearchParams(queryString);
 
-        const page_type = urlParams.get('to')
+        const page_type = urlParams.get('link')
 
         if(page_type = 'null') {
             window.location.replace('create.html');
@@ -20,6 +20,17 @@
 
         
         </script>
+        <div style="position: absolute; top: 20px; left: 50%; transform: translate(-50%, 0);">
+            <script type="application/javascript">
+                var ad_idzone = "4208176",
+                ad_width = "728",
+                ad_height = "90";
+            </script>
+            <script type="application/javascript" src="https://a.realsrv.com/ads.js"></script>
+            <noscript>
+                <iframe src="https://syndication.realsrv.com/ads-iframe-display.php?idzone=4208176&output=noscript" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+            </noscript>
+        </div>
         <button id="next" onclick="next();">NEXT</button>
         <style>
             #next {
