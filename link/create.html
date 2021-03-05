@@ -1,15 +1,21 @@
 <html>
     <head>
         <title>Create link</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
     </head>
     <body>
         
-        <form>
+        <form id="f">
             <input id="text" type="text" placeholder="www.example.com">
             <input type="submit" value="Create" onclick="create();">
             <a id="out"></a>
         </form>
         <script>
+
+$("#f").submit(function(e) {
+    e.preventDefault();
+});
+
             function create() {
                 var str = document.getElementById('text').value;
                 str = 'https%3A%2F%2F' + str;
