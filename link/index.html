@@ -10,7 +10,12 @@
 
         const page_type = urlParams.get('to')
 
-        window.open(page_type);
+        function next() {
+            window.open(page_type);
+        }
+
+        
         </script>
+        <button onclick="next();">NEXT</button>
     </body>
 </html>
